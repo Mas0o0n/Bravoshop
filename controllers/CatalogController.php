@@ -10,7 +10,7 @@ class CatalogController
         $categories=Category::getCategoriesList();
 
         $latestProducts = array ();
-        $latestProducts = Product::getLatestProducts(12);
+        $latestProducts = Product::getLatestProducts(6);
 
 
         require_once (ROOT . '/views/catalog/index.php');
@@ -21,13 +21,14 @@ class CatalogController
 
 
 
-    public function actionCategory($categoryId)
+    public function actionCategory($categoryId, $page = 1)
     {
+
         $categories = array();
         $categories = Category::getCategoriesList();
 
         $categoryProducts = array();
-        $categoryProducts = Product::getProductsListByCategory($categoryId);
+        $categoryProducts = Product::getProductsListByCategory($categoryId, $page);
 
 
         require_once(ROOT . '/views/catalog/category.php');

@@ -3,7 +3,7 @@
 class Product
 {
 
-    const SHOW_BY_DEFAULT = 10;
+    const SHOW_BY_DEFAULT = 6;
 
     /**
      * Returns an array of products
@@ -36,18 +36,23 @@ class Product
     /**
      * Returns an array of products
      */
-    public static function getProductsListByCategory($categoryId = false)
+    public static function getProductsListByCategory($categoryId = false, $page = 1)
     {
         if ($categoryId) {
+
+            $page = intval ($page);
+            $offset = ($page - 1) * self::SHOW_BY_DEFAULT;
 
             $db = Db::getConnection();
             $products = array();
             $result = $db->query("SELECT id, name, price, image, is_new, category_id, description FROM product "
                 . "WHERE status = '1' AND category_id = '$categoryId' "
-                . "ORDER BY id DESC "
-                . "LIMIT " . self::SHOW_BY_DEFAULT);
+                . "ORDER BY id ASC "
+                . "LIMIT ".self::SHOW_BY_DEFAULT
+                . " OFFSET ". $offset);
 
             $i = 0;
+
             while ($row = $result->fetch()) {
                 $products[$i]['id'] = $row['id'];
                 $products[$i]['name'] = $row['name'];
