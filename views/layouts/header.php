@@ -59,7 +59,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </div>
             <div class="col-sm-2 number animated wow fadeInRight" data-wow-delay=".5s">
-                <span><i class="glyphicon glyphicon-phone"></i>085 596 234</span>
+                <span><i class="glyphicon glyphicon-phone"></i>8-800-555-35-35</span>
                 <p>Call us</p>
             </div>
             <div class="col-sm-2 search animated wow fadeInRight" data-wow-delay=".5s">
@@ -146,6 +146,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li class="last"><a href="contact.html">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
+                    <!---pop-up-box---->
+                    <link href="/template/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+                    <script src="/template/js/jquery.magnific-popup.js" type="text/javascript"></script>
 
+                    <!---//pop-up-box---->
+                    <div id="small-dialog" class="mfp-hide">
+                        <div class="search-top">
+                            <div class="login">
+                                <form action="#" method="post">
+                                    <input type="submit" value="">
+                                    <input type="text" name="search" value="Type something..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+
+                                </form>
+                            </div>
+                            <p>	Shopping</p>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function() {
+                            $('.popup-with-zoom-anim').magnificPopup({
+                                type: 'inline',
+                                fixedContentPos: false,
+                                fixedBgPos: true,
+                                overflowY: 'auto',
+                                closeBtnInside: true,
+                                preloader: false,
+                                midClick: true,
+                                removalDelay: 300,
+                                mainClass: 'my-mfp-zoom-in'
+                            });
+
+                        });
+                    </script>
+                    <div class="clearfix"> </div>
                 </nav>
             </div>

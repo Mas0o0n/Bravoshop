@@ -1,39 +1,4 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
-
-<div class="clearfix"> </div>
-<!---pop-up-box---->
-<link href="/template/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
-<script src="/template/js/jquery.magnific-popup.js" type="text/javascript"></script>
-<!---//pop-up-box---->
-<div id="small-dialog" class="mfp-hide">
-    <div class="search-top">
-        <div class="login">
-            <form action="#" method="post">
-                <input type="submit" value="">
-                <input type="text" name="search" value="Type something..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
-
-            </form>
-        </div>
-        <p>	Shopping</p>
-    </div>
-</div>
-<script>
-    $(document).ready(function() {
-        $('.popup-with-zoom-anim').magnificPopup({
-            type: 'inline',
-            fixedContentPos: false,
-            fixedBgPos: true,
-            overflowY: 'auto',
-            closeBtnInside: true,
-            preloader: false,
-            midClick: true,
-            removalDelay: 300,
-            mainClass: 'my-mfp-zoom-in'
-        });
-
-    });
-</script>
-<!---->
 </div>
 </div>
 </div>
@@ -185,7 +150,12 @@
             </div>
         </div>
         <div class="clearfix"> </div>-->
+
         </div>
+    </div>
+    <!--Постраничная навигация-->
+    <div class="container">
+        <?php echo $pagination->get(); ?>
     </div>
     <!--//content-->
     <?php include ROOT . '/views/layouts/footer.php'; ?>

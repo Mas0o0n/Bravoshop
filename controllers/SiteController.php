@@ -1,8 +1,5 @@
 <?php
 
-include_once ROOT . '/models/category.php';
-include_once ROOT . '/models/product.php';
-
 class SiteController
 {
    public function actionIndex()
