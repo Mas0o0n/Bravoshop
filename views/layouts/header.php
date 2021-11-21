@@ -45,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="header-top">
         <div class="container">
             <div class="col-sm-4 logo animated wow fadeInLeft" data-wow-delay=".5s">
-                <h1><a href="index.html">Bravo <span>Shop</span></a></h1>
+                <h1><a href="index.html">Bravo<span>Shop</span></a></h1>
             </div>
             <div class="col-sm-4 world animated wow fadeInRight" data-wow-delay=".5s">
                 <div class="cart box_1">
@@ -142,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                             </li>
                             <li><a href="/catalog/index.php">Shop All</a></li>
-                            <li><a href="account.html">Sign In</a></li>
+                            <li><a href="/user">Sign In</a></li>
                             <li class="last"><a href="contact.html">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -179,6 +179,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                         });
                     </script>
-                    <div class="clearfix"> </div>
+
                 </nav>
             </div>
+        </div>
+    </div>
+</div>

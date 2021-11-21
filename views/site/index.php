@@ -1,9 +1,5 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
-	<!---->
-		</div>
-	</div>
-</div>
 <!--banner-->
 <div class="banner">
 	<div class="matter-banner">

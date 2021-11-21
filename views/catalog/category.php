@@ -1,7 +1,5 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
-</div>
-</div>
-</div>
+
 <div class="breadcrumbs">
         <div class="container">
         <ol class="breadcrumb breadcrumb1 animated wow slideInLeft animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInLeft;">
@@ -11,9 +9,11 @@
                    endforeach;?>
             </li>
         </ol>
-
     </div>
 </div>
+
+
+
 <!--content-->
 <div class="products">
     <div class="container">
@@ -57,9 +57,9 @@
                             <li class="subitem3"><a href="single.html">#</a></li>
                         </ul>-->
                         </li><?php endforeach;?>
-
                 </ul>
             </div>
+
             <!--initiate accordion-->
             <script type="text/javascript">
                 $(function() {
@@ -77,7 +77,6 @@
                             $(this).next().stop(true,true).slideUp('normal');
                         }
                     });
-
                 });
             </script>
             <!--//menu-->
