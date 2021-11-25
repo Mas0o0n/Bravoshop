@@ -2,18 +2,7 @@
 
 class UserController
 {
-
-
-    public function actionIndex()
-    {
-        require_once(ROOT . '/views/user/index.php');
-
-        return true;
-
-
-    }
-
-    public function actionRegister()
+       public function actionRegister()
 
     {
         $firstname = '';
@@ -37,7 +26,7 @@ class UserController
             }
 
 
-            if (!User::checkFName($lastname)) {
+            if (!User::checkLName($lastname)) {
                 $errors[] = 'Last name must be longer than 2 symbols';
             }
 
@@ -62,12 +51,61 @@ class UserController
 
         }
 
-
         require_once(ROOT . '/views/user/register.php');
 
         return true;
 
     }
+
+    public function actionLogin()
+    {
+        $email = '';
+        $password = '';
+
+        if (isset($_POST['submit'])) {
+            $email  = $_POST['email'];
+            $password = $_POST['password'];
+
+            $errors = false;
+
+            //fields validation
+
+          /**  if (!User::checkEmail($email)) {
+                $errors[] = 'E-mail is not correct';
+            }
+            if (!User::checkPassword($password)) {
+                $errors[] = 'Password must be longer than 6 symbols';
+            }*/
+
+            //User exists checking
+            $userId = User::checkUserData($email, $password);
+
+            if ($userId == false) {
+                //if data is not correct - show the error
+                $errors[] = 'Invalid E-mail or password';
+            } else {
+                //else starting the session
+                User::auth($userId);
+                //go to locked part - cabinet: 'Location:/cabinet'
+                header("Location: /cabinet");
+
+            }
+
+        }
+        require_once(ROOT . '/views/user/login.php');
+        return true;
+    }
+
+    //Deleting data from user's session
+    public function actionLogout()
+    {
+      unset($_SESSION['user']);
+
+       header("Location: /");
+    }
+
+
+
 }
 
 
