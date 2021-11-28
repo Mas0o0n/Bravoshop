@@ -1,4 +1,5 @@
 <?php
+
 function classAutoloader($class_name)
 {
     # List all the class directories in the array.

@@ -49,12 +49,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <div class="col-sm-4 world animated wow fadeInRight" data-wow-delay=".5s">
                 <div class="cart box_1">
-                    <a href="checkout.html">
-                        <h3> <div class="total">
-                                <span class="simpleCart_total"></span></div>
-                            <img src="/template/images/cart.png" alt=""/></h3>
+                    <a href="/cart">
+                        <h3>
+                            <div class="total">
+                                <span id="cart-count">(<?php echo Cart::countItems(); ?>)</span>
+                                <span class="simpleCart_total"></span>
+                            </div>
+                            <img src="/template/images/cart.png" alt=""/>
+                        </h3>
                     </a>
-                    <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+
+                    <p><a href="javascript:" class="simpleCart_empty">Empty Cart</a></p>
+
 
                 </div>
             </div>
@@ -88,28 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                         <ul class="nav navbar-nav nav_1">
                             <li><a href="index.html">Home</a></li>
-                            <!--  <li class="dropdown mega-dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Women<span class="caret"></span></a>
-                                 <div class="dropdown-menu mega-dropdown-menu">
-                                        <div class="container-fluid">
-                                          Tab panes -->
-                                        <!-- <div class="tab-content">
-                                             <div class="tab-pane active" id="men">
-                                                 <ul class="nav-list list-inline">
-                                                     <li><a href="women.html"><img src="/template/images/t7.jpg" class="img-responsive" alt=""/></a></li>
-                                                     <li><a href="women.html"><img src="/template/images/t8.jpg" class="img-responsive" alt=""/></a></li>
-                                                     <li><a href="women.html"><img src="/template/images/t9.jpg" class="img-responsive" alt=""/></a></li>
-                                                     <li><a href="women.html"><img src="/template/images/t11.jpg" class="img-responsive" alt=""/></a></li>
-                                                     <li><a href="women.html"><img src="/template/images/t1.jpg" class="img-responsive" alt=""/></a></li>
-                                                     <li><a href="women.html"><img src="/template/images/t12.jpg" class="img-responsive" alt=""/></a></li>
-                                                 </ul>
-                                             </div>
-                                         </div>
-                                     </div>
-                                      Nav tabs
 
-                                </div>
-                            </li>-->
                             <li class="dropdown mega-dropdown active">
 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
@@ -127,11 +112,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                                         </a>
                                                     </li>
                                                     <?php endforeach; ?>
-                                                     <!--   <li><a href="men.html"><img src="/template/images/t2.jpg" class="img-responsive" alt=""/>2</a></li>
-                                                      <li><a href="men.html"><img src="/template/images/t3.jpg" class="img-responsive" alt=""/>3</a></li>
-                                                      <li><a href="men.html"><img src="/template/images/t4.jpg" class="img-responsive" alt=""/>4</a></li>
-                                                      <li><a href="men.html"><img src="/template/images/t5.jpg" class="img-responsive" alt=""/>5</a></li>
-                                                      <li><a href="men.html"><img src="/template/images/t6.jpg" class="img-responsive" alt=""/>6</a></li>-->
+
                                                   </ul>
                                               </div>
 

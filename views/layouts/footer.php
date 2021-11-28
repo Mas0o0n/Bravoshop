@@ -74,5 +74,18 @@
 </div>
 <!--footer-->
 
+    <script>
+        $(document).ready(function () {
+            $(".item_add").click(function () {
+                var id = $(this).attr("data-id");
+                $.post("/cart/addAjax/"+id, {}, function (data) {
+                    $("#cart-count").html(data);
+                });
+                return false;
+            });
+        });
+    </script>
+
+
 </body>
 </html>
