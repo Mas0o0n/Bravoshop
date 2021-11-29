@@ -2,6 +2,8 @@
 
 class User
 {
+
+
     public static function register($firstname, $lastname, $email, $password) {
 
         $db = Db::getConnection();
@@ -43,17 +45,17 @@ class User
         return false;
     }
 
-    public static function checkEmail ($email) {
+    public static function checkEmail($email) {
         if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
             return true;
         }
         return false;
     }
 
-    public static function checkEmailExists ($email) {
+    public static function checkEmailExists($email) {
 
         $db = Db::getConnection();
-        $sql = 'SELECT COUNT(*) FROM `user` WHERE email = :email';
+        $sql = 'SELECT COUNT(*) FROM user WHERE email = :email';
 
         $result = $db->prepare($sql);
         $result->bindParam(':email',$email, PDO::PARAM_STR);
@@ -65,10 +67,10 @@ class User
         }
 
 
-         public static function checkUserData ($email, $password) {
+         public static function checkUserData($email, $password) {
 
         $db = Db::getConnection();
-        $sql = 'SELECT * FROM `user` WHERE email = :email AND password = :password';
+        $sql = 'SELECT * FROM user WHERE email = :email AND password = :password';
 
         $result = $db->prepare($sql);
         $result->bindParam(':email',$email, PDO::PARAM_STR);

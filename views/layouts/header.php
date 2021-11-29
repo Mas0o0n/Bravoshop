@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,35 +53,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <a href="/cart">
                         <h3>
                             <div class="total">
-                                <span id="cart-count">(<?php echo Cart::countItems(); ?>)</span>
-                                <span class="simpleCart_total"></span>
-                            </div>
-                            <img src="/template/images/cart.png" alt=""/>
-                        </h3>
-                    </a>
+                              <span id="cart-count"><?php echo Cart::countItems(); ?></span>
+                              (<span class="simpleCart_total"></span>)
 
-                    <p><a href="javascript:" class="simpleCart_empty">Empty Cart</a></p>
+                             </div>
+                             <img src="/template/images/cart.png" alt=""/>
+                         </h3>
+                     </a>
+                     <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+                 </div>
+             </div>
+             <div class="col-sm-2 number animated wow fadeInRight" data-wow-delay=".5s">
+                 <span><i class="glyphicon glyphicon-phone"></i>8-800-555-35-35</span>
+                 <p>Call us</p>
+             </div>
+             <div class="col-sm-2 search animated wow fadeInRight" data-wow-delay=".5s">
+                 <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a>
+             </div>
+             <div class="clearfix"> </div>
+         </div>
+     </div>
+     <div class="container">
+         <div class="head-top">
+             <div class="n-avigation">
 
+                 <nav class="navbar nav_bottom" role="navigation">
 
-                </div>
-            </div>
-            <div class="col-sm-2 number animated wow fadeInRight" data-wow-delay=".5s">
-                <span><i class="glyphicon glyphicon-phone"></i>8-800-555-35-35</span>
-                <p>Call us</p>
-            </div>
-            <div class="col-sm-2 search animated wow fadeInRight" data-wow-delay=".5s">
-                <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="head-top">
-            <div class="n-avigation">
-
-                <nav class="navbar nav_bottom" role="navigation">
-
-                    <!-- Brand and toggle get grouped for better mobile display -->
+                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header nav_2">
                         <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
                             <span class="sr-only">Toggle navigation</span>
@@ -100,9 +99,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
                                 <div class="dropdown-menu mega-dropdown-menu">
                                     <div class="container-fluid">
-                                        <!-- Tab panes -->
 
-                                        <div class="tab-content">
+                                        <!-- Tab panes -->
+                                       <div class="tab-content">
                                             <div class="tab-pane active" id="men">
                                                 <ul class="nav-list list-inline"> <?php foreach ($categories as $categoryItem): ?>
                                                     <li>

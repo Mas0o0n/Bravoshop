@@ -1,6 +1,5 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
-
 <div class="breadcrumbs">
     <div class="container">
         <ol class="breadcrumb breadcrumb1 animated wow slideInLeft animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: slideInLeft;">
@@ -54,7 +53,7 @@
 <h1>Your Cart is empty!</h1>
 <?php endif; ?>
 
-        <a href="#" class=" to-buy">PROCEED TO BUY</a>
+        <a href="/cart/checkout/" class=" to-buy">Checkout</a>
         <div class="clearfix"> </div>
     </div>
 </div>

@@ -99,7 +99,8 @@ class UserController
     //Deleting data from user's session
     public function actionLogout()
     {
-      unset($_SESSION['user']);
+        session_unset();
+      //unset($_SESSION['user']); //why doesnt work???
 
        header("Location: /");
     }
