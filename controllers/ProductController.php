@@ -4,7 +4,7 @@ class ProductController
 {
     public function actionView($productId)
     {
-        $categories = array();
+        $categories = [];
         $categories = Category::getCategoriesList();
 
         $product = Product::getProductById($productId);

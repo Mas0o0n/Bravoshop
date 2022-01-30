@@ -35,7 +35,11 @@
 
                 <td><?php echo $product['price']; ?></td>
                 <td><?php echo $productsInCart[$product['id']];?></td>
-
+                <td>
+                    <a href="/cart/delete/<?php echo $product['id'];?>">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </td>
             </tr>
     <?php endforeach; ?>
            <tr>

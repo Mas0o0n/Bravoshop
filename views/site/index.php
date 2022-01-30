@@ -1,5 +1,4 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
-
 <!--banner-->
 <div class="banner">
 	<div class="matter-banner">
@@ -7,12 +6,12 @@
 	    	<div class="callbacks_container">
 	      		<ul class="rslides" id="slider">
 	        		<li>
-	          			<img src="/template/images/1.jpg" alt="">
+	          			<img src="/template/images/2.jpg" alt="">
 						<div class="tes animated wow fadeInUp animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-							<h2>MEN & WOMEN</h2>
-							<h3>Trousers & Chinos</h3>
-							<h4>UPTO 50%</h4>
-							<p>OFFER</p>
+							<h2>Only for Men</h2>
+							<h3>Clothes and Accessories</h3>
+							<h4>Best brands!</h4>
+							<p>And the best OFFERS</p>
 						</div>
 	       			 </li>
 			 		 <li>
@@ -57,12 +56,12 @@
                 <div class="clearfix"> </div>
 			</div>
 
+
+            <div class="content-top1">
             <?php foreach ($latestProducts as $product):?>
 
-			<div class="content-top1">
-
-				<div class="col-md-3 col-md2 animated wow fadeInDown animated" data-wow-delay=".5s">
-					<div class="col-md1 simpleCart_shelfItem">
+				<div class="col-md-3 col-md2 animated wow fadeInDown animated product-wrapper" data-wow-delay=".5s">
+					<div class="col-md1 simpleCart_shelfItem product-wrapper">
 						<a href="/product/<?php echo $product['id'];?>">
                             <img class="img-responsive" src="<?php echo $product['image'];?>" alt=""/>
 						</a>
@@ -73,19 +72,20 @@
 
 						<div class="price">
 								<h5 class="item_price"><?php echo $product['price'];?> $</h5>
-								<a href="#" class="item_add">Add To Cart</a>
+                            <a href="/cart/add/<?php echo $product['id']; ?>" data-id="<?php echo $product['id'];?>" class="item_add">Add To Cart</a>
 								<div class="clearfix"></div>
 						</div>
 					</div>
-				</div>
+                </div>
                 <?php endforeach;?>
 
-
+            </div>
 			<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
 </div>
+
 <!--//content-->
 	<div class="con-tp">
 		<div class="container">
@@ -164,68 +164,7 @@
 		</div>
 		<div class="clearfix"></div>
 		</div>
-	</div>
-	<div class="c-btm">
-		<div class="content-top1">
-			<div class="container">
-				<div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
-					<div class="col-md1 simpleCart_shelfItem">
-						<a href="single.html">
-							<img class="img-responsive" src="/template/images/pi9.png" alt="" />
-						</a>
-						<h3><a href="single.html">Trousers</a></h3>
-						<div class="price">
-								<h5 class="item_price">$300</h5>
-								<a href="#" class="item_add">Add To Cart</a>
-								<div class="clearfix"> </div>
-						</div>
-
-					</div>
-				</div>
-			<div class="col-md-3 col-md2 animated wow fadeInLeft" data-wow-delay=".5s">
-					<div class="col-md1 simpleCart_shelfItem">
-						<a href="single.html">
-							<img class="img-responsive" src="/template/images/pi10.png" alt="" />
-						</a>
-						<h3><a href="single.html">Formal</a></h3>
-						<div class="price">
-								<h5 class="item_price">$450</h5>
-								<a href="#" class="item_add">Add To Cart</a>
-								<div class="clearfix"> </div>
-						</div>
-
-					</div>
-				</div>
-			<div class="col-md-3 col-md2 animated wow fadeInRight" data-wow-delay=".5s">
-					<div class="col-md1 simpleCart_shelfItem">
-						<a href="single.html">
-							<img class="img-responsive" src="/template/images/pi11.png" alt="" />
-						</a>
-						<h3><a href="single.html">Trousers</a></h3>
-						<div class="price">
-								<h5 class="item_price">$350</h5>
-								<a href="#" class="item_add">Add To Cart</a>
-								<div class="clearfix"> </div>
-						</div>
-
-					</div>
-				</div>
-			<div class="col-md-3 col-md2 animated wow fadeInRight" data-wow-delay=".5s">
-					<div class="col-md1 simpleCart_shelfItem">
-						<a href="single.html">
-							<img class="img-responsive" src="/template/images/pi12.png" alt="" />
-						</a>
-						<h3><a href="single.html">Formal</a></h3>
-						<div class="price">
-								<h5 class="item_price">$400</h5>
-								<a href="#" class="item_add">Add To Cart</a>
-								<div class="clearfix"> </div>
-						</div>
-
-					</div>
-				</div>
+    </div>
 			<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
+
     <?php include ROOT . '/views/layouts/footer.php'; ?>

@@ -24,7 +24,7 @@
             <div class="content-top1">
                 <?php foreach ($categoryProducts as $product ): ?>
                     <div class="col-md-4 col-md4">
-                        <div class="col-md1 simpleCart_shelfItem">
+                        <div class="col-md1 simpleCart_shelfItem product-wrapper">
                             <a href="/product/<?php echo $product['id'];?>">
                                 <img class="img-responsive" src="<?php echo $product['image'];?>" alt=""/>
                             </a>
@@ -155,7 +155,7 @@
     </div>
     <!--Постраничная навигация-->
     <div class="container">
-        <?php echo $pagination->get(); ?>
+        <?php if($total>Product::SHOW_BY_DEFAULT) {echo $pagination->get();} ?>
     </div>
     <!--//content-->
     <?php include ROOT . '/views/layouts/footer.php'; ?>

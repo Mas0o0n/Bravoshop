@@ -24,7 +24,7 @@ ul{
 	margin: 0;
 }
 h1,h2,h3,h4,h5,h6,label,p{
-	margin:0;	
+	margin:0;
 }
 /*----*/
 .logo span {
@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 	margin-top: 4px;
 }
 .header-left ul li{
-	display: inline-block;	
+	display: inline-block;
 }
 .header-left ul li a{
 	text-decoration: none;
@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 	margin: 0 2em 0 0;
 }
 .header-left ul li a:hover{
-	color:  #EF5F21; 
+	color:  #EF5F21;
 }
 .head-top {
   padding: 0.5em 0;
@@ -107,7 +107,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 .dropdown-menu.columns-2 {
     min-width: 400px;
-} 
+}
 .dropdown-menu.columns-3 {
     min-width:550px;
 }
@@ -135,7 +135,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 .dropdown-menu {
     right: 260px !important;
     left:inherit;
-}    
+}
 .nav_bottom{
 	background:none;
 }
@@ -153,19 +153,19 @@ h1,h2,h3,h4,h5,h6,label,p{
     width: 100%;
     padding:0;
 }
-.nav-tabs > li > a, 
-.nav-tabs > li > a:hover, 
-.nav-tabs > li > a:focus, 
-.nav-tabs > li.active > a, 
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus,
+.nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   border: none;
   border-radius: 0;
 }
 .nav-list { border-bottom: 1px solid #eee; }
-.nav-list > li { 
+.nav-list > li {
   padding:20px 15px 15px;
-  border-left: 1px solid #eee; 
+  border-left: 1px solid #eee;
   margin-right: 0 !important;
 }
 .nav-list > li:last-child { border-right: 1px solid #eee; }
@@ -197,7 +197,7 @@ ul.nav_1 li a {
 }
 ul.nav_1 li.last{
 	margin-right:0;
-/*-- w3layouts --*/	
+/*-- w3layouts --*/
 }
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus, .nav>li>a:hover, .nav>li>a:focus{
     background-color:#fff !important;
@@ -318,10 +318,10 @@ i.glyphicon.glyphicon-phone {
 .item_add {
   color: #000;
   border:none;
-}	
+}
 a.item_add {
  text-decoration: none;
-}		
+}
 .grid_1 img{
 	margin-bottom:1em;
 }
@@ -424,10 +424,15 @@ ul.callbacks_tabs.callbacks1_tabs {
     color: #000;
 }
 .col-md1 h3 a {
+    height: 2.2em;
     color: #fa03bb;
     text-decoration: none;
     font-family: 'Poiret One', cursive;
     font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .price h5 {
     color: #000;
@@ -482,7 +487,7 @@ ul.callbacks_tabs.callbacks1_tabs {
     text-align: center;
 }
 .col-md3 {
-    background: url(/template/images/11.jpg) no-repeat;
+    background: url(/public/images/11.jpg) no-repeat;
     min-height: 399px;
     background-size: cover;
     -webkit-background-size: cover;
@@ -677,7 +682,7 @@ p.footer-class a:hover{
 }
 .contact-bottom  input[type="text"]{
 	width:100%;
-	padding:0.7em;	
+	padding:0.7em;
 	border:1px solid #bbb;
 	-webkit-appearance:none;
 	outline:none;
@@ -687,7 +692,7 @@ p.footer-class a:hover{
 }
 .contact-bottom-top textarea{
 	width:100%;
-	padding:1em;	
+	padding:1em;
 	border:1px solid #bbb;
 	-webkit-appearance:none;
 	outline:none;
@@ -732,8 +737,8 @@ p.footer-class a:hover{
 .address1 p{
 	font-size:1.8em;
 	color: #b2b2b2;
-	line-height: 1.7em;	
-	
+	line-height: 1.7em;
+
 }
 .address1 p a{
 	text-decoration:none;
@@ -765,9 +770,9 @@ p.footer-class a:hover{
     color: #fa03bb;
 }
 .breadcrumbs {
-    padding: 1.5em 0 !important; 
+    padding: 1.5em 0 !important;
     background: #f5f5f5 !important;
-   
+
 }
 .breadcrumb {
     padding: 0px 15px;
@@ -874,7 +879,7 @@ a.forgot {
 /*--register--*/
 ul.social li i {
     display: inline-block;
-    background: url(/template/images/img-sprite.png) no-repeat -8px -64px;
+    background: url(/public/images/img-sprite.png) no-repeat -8px -64px;
     width: 47px;
     height: 47px;
     margin: 0 5px 0 0;
@@ -976,7 +981,7 @@ ul.social {
 }
 .checkbox input + i:after {
     content: '';
-    background: url("/template/images/check.png") no-repeat 0px 0px;
+    background: url("/public/images/check.png") no-repeat 0px 0px;
     top: 0px;
     left: 0px;
     width: 15px;
@@ -1058,7 +1063,7 @@ ul.kid-menu{
 	height: auto;
 	padding: 0;
 	list-style: none;
-	margin: 0.5em 0;	
+	margin: 0.5em 0;
 }
 .menu-drop > li > a {
 	width: 100%;
@@ -1072,7 +1077,7 @@ ul.kid-menu{
 .menu-drop > li > a:hover{
 	color:#403b37;
 }
-.menu-drop ul li a {	
+.menu-drop ul li a {
 	width: 100%;
 	display: inline-block;
 	position: relative;
@@ -1086,7 +1091,7 @@ ul.kid-menu{
 	color:#000;
 }
 ul.kid-menu li,ul.cute li{
-	list-style: none;	
+	list-style: none;
 }
 /*--//menu-drop--*/
 /*----*/
@@ -1248,7 +1253,7 @@ table{
 th{
 	color: #403b37;
   	font-size: 1.2em;
-    font-weight: 400;	
+    font-weight: 400;
 }
 th, td {
     padding: 10px;
@@ -1601,7 +1606,7 @@ a.to-buy:hover{
 .content-top h1 {
   font-size: 2.5em;
   margin: 0 0 0.3em;
-}	
+}
 .content-top {
   padding: 3em 0;
 }
@@ -1639,7 +1644,7 @@ ul.nav_1 li {
 }
 .col-md3 {
     min-height: 394px;
-}
+    }
 .top-footer h3 {
     font-size: 1.8em;
 }
@@ -1768,7 +1773,7 @@ ul.nav_1 li {
 .col-md3 {
 	float:left;
     width: 52%;
-    margin: 0 0 2em;
+    margin: 2em 0 2em;
 }
 .col-md3 {
     min-height: 313px;
@@ -1794,7 +1799,7 @@ ul.nav_1 li {
 }
 .col-md1 h3 {
     font-size: 1em;
-}
+    }
 .price h5 {
     font-size: 1.1em;
 }
@@ -1951,7 +1956,7 @@ p.log {
 .world {
     width: 35%;
     padding: 0;
-}	
+}
 select.in-drop, select.in-drop1 {
   font-size: 0.8em;
 }
@@ -2119,7 +2124,7 @@ select.in-drop, select.in-drop1 {
 }
 .banner-mat img {
   display: none;
-}	
+}
 .logo {
   width: 100%;
   padding: 0;
@@ -2215,7 +2220,7 @@ select.in-drop, select.in-drop1 {
 }
 .col-md3 {
   padding: 0 3px;
-  margin: 0 0 1em;
+  margin: 2em 0 1em;
 }
 .price a {
   font-size: 0.8em;
@@ -2302,7 +2307,7 @@ a.to-buy {
 }
 /*--typo--*/
 .page-header h3 {
-  font-size: 2em; 
+  font-size: 2em;
 }
 button.btn.btn-lg {
   font-size: 1em;
@@ -2382,9 +2387,11 @@ ul.callbacks_tabs.callbacks1_tabs {
     margin-bottom: 0px;
 }
 }
+
+
 @media(max-width:320px){
 .logo {
-  width: 100%;	
+  width: 100%;
 }
 .logo h1 a {
     font-size: 0.85em;
@@ -2715,7 +2722,7 @@ h3.typo1 {
 }
 .page-header h3 {
   font-size: 1.8em;
-} 
+}
 h1.typo1 {
   font-size: 1.7em;
   margin: 0 0 0.5em;
@@ -2723,4 +2730,9 @@ h1.typo1 {
 th {
     font-size: 0.875em;
 }
+
+
+}
+.product-wrapper {
+    margin-bottom:  2em ;
 }

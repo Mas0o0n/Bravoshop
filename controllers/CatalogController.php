@@ -3,15 +3,21 @@
 
 class CatalogController
 {
-    public function actionIndex()
+    public function actionIndex($page = 1)
     {
-        $categories = array();
+        $categories = [];
         $categories=Category::getCategoriesList();
 
-        $latestProducts = array ();
-        $latestProducts = Product::getLatestProducts(10);
+      //  $latestProducts = [];
+      //  $latestProducts = Product::getLatestProducts($page);
+        $latestProducts = [];
+        $latestProducts = Product::getLatestProductsList($page);
 
+        $total = Product::getTotalProducts();
 
+        //creating object Pagination - for page navigation
+
+        $pagination = new Pagination($total, $page, Product::SHOW_BY_DEFAULT, 'page-');
         require_once (ROOT . '/views/catalog/index.php');
 
         return true;
@@ -23,10 +29,10 @@ class CatalogController
     public function actionCategory($categoryId, $page = 1)
     {
 
-        $categories = array();
+        $categories = [];
         $categories = Category::getCategoriesList();
 
-        $categoryProducts = array();
+        $categoryProducts = [];
         $categoryProducts = Product::getProductsListByCategory($categoryId, $page);
 
         $total = Product::getTotalProductsInCategory($categoryId);
@@ -36,6 +42,7 @@ class CatalogController
         $pagination = new Pagination($total, $page, Product::SHOW_BY_DEFAULT, 'page-');
 
         require_once(ROOT . '/views/catalog/category.php');
+
 
         return true;
     }

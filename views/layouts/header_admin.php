@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BravoShop</title>
+    <title>Youth Fashion A Ecommerce Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
     <link href="/template/css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="/template/js/jquery.min.js"></script>
@@ -46,39 +46,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="header-top">
         <div class="container">
             <div class="col-sm-4 logo animated wow fadeInLeft" data-wow-delay=".5s">
-                <h1><a href="/">Bravo<span>Shop</span></a></h1>
-            </div>
-            <div class="col-sm-4 world animated wow fadeInRight" data-wow-delay=".5s">
-                <div class="cart box_1">
-                    <a href="/cart">
-                        <h3>
-                            <div class="total">
-                              <span id="cart-count"><?php echo Cart::countItems(); ?></span>
-                                <span class="simpleCart_total"></span>)
-                                                         </div>
-                             <img src="/template/images/cart.png" alt=""/>
-                         </h3>
-                     </a>
-                     <p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
-                 </div>
-             </div>
-             <div class="col-sm-2 number animated wow fadeInRight" data-wow-delay=".5s">
-                 <span><i class="glyphicon glyphicon-phone"></i>8-800-555-35-35</span>
-                 <p>Call us</p>
-             </div>
-             <div class="col-sm-2 search animated wow fadeInRight" data-wow-delay=".5s">
-                 <a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a>
-             </div>
-             <div class="clearfix"> </div>
-         </div>
-     </div>
-     <div class="container">
-         <div class="head-top">
-             <div class="n-avigation">
+                <h1><a href="index.html">Bravo<span>Shop</span></a></h1>
+                </div>
 
-                 <nav class="navbar nav_bottom" role="navigation">
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="head-top">
+            <div class="n-avigation">
 
-                     <!-- Brand and toggle get grouped for better mobile display -->
+                <nav class="navbar nav_bottom" role="navigation">
+
+                    <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header nav_2">
                         <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
                             <span class="sr-only">Toggle navigation</span>
@@ -90,50 +70,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-                        <ul class="nav navbar-nav nav_1">
-                            <li><a href="/">Home</a></li>
+                        <div class="nav navbar-nav nav_1">
+                            <div class="pull-right"
+                            <ul><a href="/user/logout/">Logout</a></ul>
+                        </div>
+                    </div>
 
-                            <li class="dropdown mega-dropdown active">
 
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
-                                <div class="dropdown-menu mega-dropdown-menu">
-                                    <div class="container-fluid">
-
-                                        <!-- Tab panes -->
-                                       <div class="tab-content">
-                                            <div class="tab-pane active" id="men">
-                                                <ul class="nav-list list-inline"> <?php foreach ($categories as $categoryItem): ?>
-                                                    <li>
-                                                        <a href="/category/<?php echo $categoryItem['id'];?>">
-                                                            <img src="<?php echo $categoryItem['img'];?>" class="img-responsive" alt=""/>
-                                                            <?php echo $categoryItem ['name'];?>
-                                                        </a>
-                                                    </li>
-                                                    <?php endforeach; ?>
-
-                                                  </ul>
-                                              </div>
-
-                                          </div>
-                                      </div>
-                                      <!-- Nav tabs -->
-
-                                </div>
-                            </li>
-                            <li><a href="/catalog/page-1">Shop All</a></li>
-                            <li class="last"><a href="contact.html">Contact Us</a></li>
-
-                      <?php if (User::isGuest()): ?>
-                            <li><a href="/user/login/">Login</a></li>
-                            <?php else: ?>
-
-                            <li><a href="/cabinet/">Account</a></li>
-                            <li><a href="/user/logout/">Logout</a></li>
-                            <?php endif; ?>
-
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                    <!---pop-up-box---->
+                     <!---pop-up-box---->
                     <link href="/template/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
                     <script src="/template/js/jquery.magnific-popup.js" type="text/javascript"></script>
 

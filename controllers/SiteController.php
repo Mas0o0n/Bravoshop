@@ -4,10 +4,10 @@ class SiteController
 {
    public function actionIndex()
    {
-      $categories = array();
+      $categories = [];
        $categories = Category::getCategoriesList();
 
-      $latestProducts = array();
+      $latestProducts = [];
       $latestProducts = Product::getLatestProducts(8);
 
 

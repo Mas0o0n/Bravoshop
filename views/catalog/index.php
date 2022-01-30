@@ -11,6 +11,7 @@
 </div>
 
 
+
 <!--content-->
 <div class="products">
     <div class="container">
@@ -19,7 +20,7 @@
             <div class="content-top1">
                 <?php foreach ($latestProducts as $product): ?>
                 <div class="col-md-4 col-md4">
-                    <div class="col-md1 simpleCart_shelfItem">
+                    <div class="col-md1 simpleCart_shelfItem product-wrapper">
                         <a href="/product/<?php echo $product['id'];?>">
                             <img class="img-responsive" src="<?php echo $product['image'];?>" alt=""/>
                         </a>
@@ -30,7 +31,7 @@
 
                         <div class="price">
                             <h5 class="item_price"><?php echo $product['price'];?> $</h5>
-                            <a href="#" class="item_add">Add To Cart</a>
+                            <a href="/cart/add/<?php echo $product['id']; ?>" data-id="<?php echo $product['id'];?>" class="item_add">Add To Cart</a>
                             <div class="clearfix"></div>
                         </div>
                     </div>
@@ -75,6 +76,8 @@
 
                 });
             </script>
+
+
             <!--//menu-->
             <!--seller
             <div class="product-bottom">
@@ -147,5 +150,9 @@
         <div class="clearfix"> </div>-->
     </div>
 </div>
+    <!--Постраничная навигация-->
+    <div class="container">
+        <?php if($total>Product::SHOW_BY_DEFAULT) {echo $pagination->get();} ?>
+    </div>
 <!--//content-->
 <?php include ROOT . '/views/layouts/footer.php'; ?>

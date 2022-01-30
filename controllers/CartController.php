@@ -147,4 +147,18 @@ class CartController
         return true;
     }
 
+    //deleting product by synchronous request
+
+    public function actionDelete($id)
+    {
+        //delete product from the cart
+        Cart::deleteProduct($id);
+        //return user to the cart
+        header("Location/cart");
+
+    }
+
+
+
+
 }

@@ -71,6 +71,19 @@ class Cart
         }
     }
 
+    public static function deleteProduct($id)
+    { //get array with products ids and quantity at the cart
+
+        $productsInCart = self::getProducts();
+       //deleting from array element with id
+
+    unset($productsInCart['$id']);
+    //save array with deleted element to session
+        $_SESSION['products'] = $productsInCart;
+
+    }
+
+
 
 
 }
