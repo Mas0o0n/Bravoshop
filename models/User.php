@@ -92,7 +92,7 @@ class User
 
     public static function checkLogged()
     {
-        //if sessions exist, return user id
+       //if sessions exist, return user id
         if (isset($_SESSION['user'])) {
             return $_SESSION['user'];
         }

@@ -28,8 +28,8 @@ class Cart
         $_SESSION['products'] = $productsInCart;
 
         return self::countItems();
-
     }
+
     public static function countItems()
     {
         if (isset ($_SESSION['products'])) {
@@ -82,8 +82,5 @@ class Cart
         $_SESSION['products'] = $productsInCart;
 
     }
-
-
-
 
 }

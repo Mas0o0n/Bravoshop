@@ -16,7 +16,7 @@
             <h2>Welcome, <?php echo $user['first_name'];?></h2>
             <div class="account_grid">
                 <li><a href="/cabinet/edit"><span aria-hidden="true"></span >Edit Account info</a></li>
-                <li><a href="#"><span aria-hidden="true"></span >Shopping List</a></li>
+                <li><a href="/cart"><span aria-hidden="true"></span >Shopping List</a></li>
 
 
                 </div>

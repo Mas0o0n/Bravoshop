@@ -95,7 +95,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
                             <li class="dropdown mega-dropdown active">
 
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Popular Categories<span class="caret"></span></a>
                                 <div class="dropdown-menu mega-dropdown-menu">
                                     <div class="container-fluid">
 
@@ -121,7 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                 </div>
                             </li>
                             <li><a href="/catalog/page-1">Shop All</a></li>
-                            <li class="last"><a href="contact.html">Contact Us</a></li>
+                            <li class="last"><a href="contact.html">About Us</a></li>
 
                       <?php if (User::isGuest()): ?>
                             <li><a href="/user/login/">Login</a></li>

@@ -31,7 +31,7 @@
 
                         <div class="price">
                             <h5 class="item_price"><?php echo $product['price'];?> $</h5>
-                            <a href="/cart/add/<?php echo $product['id']; ?>" data-id="<?php echo $product['id'];?>" class="item_add">Add To Cart</a>
+                            <a href="#" data-id="<?php echo $product['id'];?>" class="item_add">Add To Cart</a>
                             <div class="clearfix"></div>
                         </div>
                     </div>

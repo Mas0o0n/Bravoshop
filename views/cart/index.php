@@ -46,18 +46,12 @@
                <td colspan="3">Total cost: </td>
                <td><?php echo $totalPrice; ?></td>
            </tr>
-
-
-
-
-
-
         </table>
 <?php else: ?>
 <h1>Your Cart is empty!</h1>
 <?php endif; ?>
 
-        <a href="/cart/checkout/" class=" to-buy">Checkout</a>
+        <a href="/cart/checkout/" class=" to-buy">OK</a>
         <div class="clearfix"> </div>
     </div>
 </div>

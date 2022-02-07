@@ -99,7 +99,7 @@
                                 </select></li>
                         </ul>
                     </div>
-                    <a href="#" class="cart item_add">More details</a>
+                    <a href="#" data-id="<?php echo $product['id'];?>" class="item_add">Add To Cart</a>
                 </div>
             </div>
             <div class="clearfix"> </div>
