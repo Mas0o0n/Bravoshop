@@ -53,15 +53,12 @@
 						</div>
 					</div>
 				</div>
-                <div class="clearfix"> </div>
-			</div>
+            </div>
+        </div>
+          <?php foreach ($latestProducts as $product):?>
 
-
-            <div class="content-top1">
-            <?php foreach ($latestProducts as $product):?>
-
-				<div class="col-md-3 col-md2 animated wow fadeInDown animated product-wrapper" data-wow-delay=".5s">
-					<div class="col-md1 simpleCart_shelfItem product-wrapper">
+                    <div class="col-md-4 col-md4">
+                        <div class="col-md1 simpleCart_shelfItem product-wrapper">
 						<a href="/product/<?php echo $product['id'];?>">
                             <img class="img-responsive" src="<?php echo $product['image'];?>" alt=""/>
 						</a>
@@ -77,15 +74,9 @@
                             <div class="clearfix"></div>
 						</div>
 					</div>
-                </div>
                 <?php endforeach;?>
-
-            </div>
-			<div class="clearfix"></div>
-			</div>
 		</div>
 	</div>
-</div>
 
 <!--//content-->
 	<div class="con-tp">
